@@ -20,8 +20,9 @@ public class Integradores {
         ServiceEstudiante s = new ServiceEstudiante();
         Estudiante e = s.crearEstudiante();
               
-        s.calcularPromedio(e);
+        System.out.println(" El promedio del curso es " + s.calcularPromedio(e));
         s.notaMPromedio(e);
+        
     }
     }
     

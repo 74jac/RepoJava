@@ -19,31 +19,35 @@ public class ServiceEstudiante {
         Scanner leer = new Scanner(System.in);
         for (int i = 0; i < 8; i++) {
             System.out.println("ingrese el nombre del estudiante");
-            //String nombre= leer.next();
-            e.nombre[i] = leer.next();
+          
+            e.getNombre()[i] = leer.next();
 
             System.out.println("ingrese el nota del estudiante");
-            e.nota[i] = leer.nextInt();
+            e.getNota()[i] = leer.nextInt();
 
         }
         return e;
 } 
     public double calcularPromedio(Estudiante e) {
         double suma = 0;
-
+       
         for (int i = 0; i < 8; i++) {
-            suma = suma + e.nota[i];
+            suma = suma + e.getNota()[i];
+            System.out.println("");
         }
-        return suma / 8;
-    }
+        double promedio = suma / 8;
 
+        return promedio;
+       
+     
+        }
 public void notaMPromedio(Estudiante e){
 
 
     for (int i = 0; i < 8; i++) {
-        if (e.nota[i]> calcularPromedio(e)) {
+        if (e.getNota()[i]> calcularPromedio(e)) {
           
-            System.out.println("El alumno " + e.nombre[i] + " supera el promedio " + e.nota[i]);
+            System.out.println("El alumno " + e.getNombre()[i] + " supera el promedio " + e.getNota()[i]);
         }
     }
    

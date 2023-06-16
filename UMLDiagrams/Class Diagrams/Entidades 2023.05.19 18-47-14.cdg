@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Entidades">
+  <ClassDiagramComponents>
+    <Class name="Cadena" package="Entidades" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields>
+        <Field name="frase" type="String" visibility="public"/>
+        <Field name="longitud" type="int" visibility="public"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="String" name="frase"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getFrase" returnType="String" visibility="public"/>
+        <Method name="getLongitud" returnType="int" visibility="public"/>
+        <Method name="setFrase" returnType="void" visibility="public">
+          <Argument type="String" name="frase"/>
+        </Method>
+        <Method name="setLongitud" returnType="void" visibility="public">
+          <Argument type="int" name="longitud"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Curso" package="Entidades" visibility="public" xPosition="120.0" yPosition="191.0">
+      <Fields>
+        <Field name="nombreCurso" type="String" visibility="package"/>
+        <Field name="cantidadHoraspordia" type="int" visibility="package"/>
+        <Field name="cantidadDiasPorSemana" type="int" visibility="package"/>
+        <Field name="turno" type="String" visibility="package"/>
+        <Field name="precioPorHora" type="double" visibility="package"/>
+        <Field name="alumnos" type="String[]" visibility="public"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="String" name="nombreCurso"/>
+          <Argument type="int" name="cantidadHoraspordia"/>
+          <Argument type="int" name="cantidadDiasPorSemana"/>
+          <Argument type="String" name="turno"/>
+          <Argument type="double" name="precioPorHora"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getNombreCurso" returnType="String" visibility="public"/>
+        <Method name="setNombreCurso" returnType="void" visibility="public">
+          <Argument type="String" name="nombreCurso"/>
+        </Method>
+        <Method name="getCantidadHoraspordia" returnType="int" visibility="public"/>
+        <Method name="setCantidadHoraspordia" returnType="void" visibility="public">
+          <Argument type="int" name="cantidadHoraspordia"/>
+        </Method>
+        <Method name="getCantidadDiasPorSemana" returnType="int" visibility="public"/>
+        <Method name="setCantidadDiasPorSemana" returnType="void" visibility="public">
+          <Argument type="int" name="cantidadDiasPorSemana"/>
+        </Method>
+        <Method name="getTurno" returnType="String" visibility="public"/>
+        <Method name="setTurno" returnType="void" visibility="public">
+          <Argument type="String" name="turno"/>
+        </Method>
+        <Method name="getPrecioPorHora" returnType="double" visibility="public"/>
+        <Method name="setPrecioPorHora" returnType="void" visibility="public">
+          <Argument type="double" name="precioPorHora"/>
+        </Method>
+        <Method name="getAlumnos" returnType="String[]" visibility="public"/>
+        <Method name="setAlumnos" returnType="void" visibility="public">
+          <Argument type="String[]" name="alumnos"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="ParDeNumeros" package="Entidades" visibility="public" xPosition="620.0" yPosition="20.0">
+      <Fields>
+        <Field name="num1" type="double" visibility="package"/>
+        <Field name="num2" type="double" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="double" name="num1"/>
+          <Argument type="double" name="num2"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getNum1" returnType="double" visibility="public"/>
+        <Method name="setNum1" returnType="void" visibility="public">
+          <Argument type="double" name="num1"/>
+        </Method>
+        <Method name="getNum2" returnType="double" visibility="public"/>
+        <Method name="setNum2" returnType="void" visibility="public">
+          <Argument type="double" name="num2"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Persona" package="Entidades" visibility="public" xPosition="920.0" yPosition="20.0">
+      <Fields>
+        <Field name="nombre" type="String" visibility="private"/>
+        <Field name="nacimiento" type="Date" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="String" name="nombre"/>
+          <Argument type="Date" name="nacimiento"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getNombre" returnType="String" visibility="public"/>
+        <Method name="setNombre" returnType="void" visibility="public">
+          <Argument type="String" name="nombre"/>
+        </Method>
+        <Method name="getNacimiento" returnType="Date" visibility="public"/>
+        <Method name="setNacimiento" returnType="void" visibility="public">
+          <Argument type="Date" name="nacimiento"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations/>
+</ClassDiagram>

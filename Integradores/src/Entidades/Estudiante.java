@@ -10,13 +10,12 @@ package Entidades;
  * @author JoséAgustín
  */
 public class Estudiante {
-    public String[] nombre = new String[8];
-    public double[] nota = new double[8];
+    private String[] nombre = new String[8];
+    private double[] nota = new double[8];
 
      public Estudiante() {
     }
-    
-    
+
     public Estudiante(String[] nombre, double[] nota) {
         this.nombre = nombre;
         this.nota = nota;
@@ -37,6 +36,9 @@ public class Estudiante {
     public void setNota(double[] nota) {
         this.nota = nota;
     }
+    
+    
+
     
 
 }
