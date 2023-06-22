@@ -80,5 +80,5 @@ cuantas en su peso ideal y cuantos, por encima, y también calcularemos
 un porcentaje de cuantos son mayores de edad y cuantos menores. Para
 esto, podemos crear unos métodos adicionales.
     */
-    public int 
+  
 }
