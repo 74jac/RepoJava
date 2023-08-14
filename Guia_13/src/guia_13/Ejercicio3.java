@@ -47,14 +47,75 @@ public class Ejercicio3 {
 //            System.out.println(e.toString() +   " UPS....OCURRIO ALGO INESPERADO");
 //        } finally {
 //            System.out.println("FIN");
+////        }
+////    }
+//        System.out.println("Intrese un numero: ");
+//        String num0 =leer.next();
+//        int num = Integer.parseInt(num0);
+//        
+//        System.out.println("Ingrese otro numero: ");
+//        String num1 = leer.next();
+//        int num2 = Integer.parseInt(num1);
+        //        Scanner leer = new Scanner(System.in).useDelimiter("\n");
+//        DivisionNumero DN = new DivisionNumero();
+//
+//        System.out.println("Ingrese el primer numero");
+//        String num1 = leer.next();
+//        System.out.println("Ingrese el segundo");
+//        String num2 = leer.next();
+//
+//        int numero1AConvertir = 0;
+//        int numero2AConvertir = 0;
+//        try {
+//
+//             numero1AConvertir = Integer.parseInt(num1);
+//
+//             numero2AConvertir = Integer.parseInt(num2);
+//
+//        } catch (NumberFormatException e) {
+//            System.out.println(e.getMessage() + " Ingresaste una letra..");
+//           System.out.println("Ingrese el primer numero");
+//         num1 = leer.next();
+//        System.out.println("Ingrese el segundo");
+//        num2 = leer.next();
+//        numero1AConvertir = Integer.parseInt(num1);
+//
+//        numero2AConvertir = Integer.parseInt(num2);
+//        
 //        }
+//
+//        try{
+//            System.out.println(DN.DivisionNumero(numero1AConvertir, numero2AConvertir));
+//       
+//    }catch (ArithmeticException a){
+//        
+//            System.out.println(a + " -----< Division x cero");
 //    }
-        System.out.println("Intrese un numero: ");
-        String num0 =leer.next();
-        int num = Integer.parseInt(num0);
+//    }
+//}
+        Scanner scanner = new Scanner(System.in);
+        String a, b;
+        int c = 0, d = 0;
         
-        System.out.println("Ingrese otro numero: ");
-        String num1 = leer.next();
-        int num2 = Integer.parseInt(num1);
+        System.out.print("Ingrese el primer numero: ");
+        a = scanner.nextLine();
+        System.out.print("Ingrese el segundo numero: ");
+        b = scanner.nextLine();
+
+        try {
+            c = Integer.parseInt(a);
+            d = Integer.parseInt(b);
+            try {
+                int division = c/d;
+
+                System.out.print("La division es: ");
+                System.out.println(division);
+            } catch (Exception e) {
+                System.out.println("Error numerico: " + e.getMessage());
+            }
+        } catch (Exception e) {
+            System.out.println("Error de string: " + e.getMessage());
+        }
+    }
     }
     
